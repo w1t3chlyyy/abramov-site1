@@ -224,6 +224,42 @@
     .hustlify-metric span { font-size: 12.5px; color: rgba(255,255,255,0.5); }
     .hustlify-bars { display: flex; align-items: flex-end; gap: 8px; height: 70px; }
     .hustlify-bars i { flex: 1; border-radius: 6px 6px 0 0; background: linear-gradient(180deg, #7bb3f0, #1a4b9e); opacity: 0.85; }
+    /* ===== логотип вместо буквы H ===== */
+.hustlify-mark { padding: 0; overflow: hidden; }
+.hustlify-mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+/* ===== адаптив ===== */
+@media (max-width: 900px) {
+  .hustlify-card {
+    grid-template-columns: 1fr;
+    padding: 44px 32px;
+    gap: 36px;
+  }
+  .hustlify-visual { height: 220px; }
+}
+
+@media (max-width: 600px) {
+  .hustlify-card {
+    padding: 32px 22px;
+    border-radius: 22px;
+  }
+  .hustlify-glow { width: 300px; height: 300px; top: -120px; right: -120px; }
+  .hustlify-glow2 { width: 220px; height: 220px; bottom: -100px; }
+
+  .hustlify-mark { width: 44px; height: 44px; border-radius: 12px; margin-bottom: 18px; }
+
+  .hustlify-card h3 { font-size: 22px; margin-bottom: 14px; }
+  .hustlify-card p { font-size: 14.5px; margin-bottom: 24px; }
+
+  .hustlify-tags { gap: 8px; margin-bottom: 26px; }
+  .hustlify-tags span { font-size: 12px; padding: 6px 12px; }
+
+  .btn-hustlify { width: 100%; justify-content: center; padding: 14px 20px; font-size: 14px; }
+
+  .hustlify-visual { height: auto; min-height: 180px; padding: 20px; gap: 20px; }
+  .hustlify-metric b { font-size: 26px; }
+  .hustlify-bars { height: 56px; }
+}
 
     /* stats */
     .stats-band { background: linear-gradient(100deg, #0b1a33, #1a3b6e); padding: 70px 0; }
@@ -572,7 +608,9 @@
       <div class="hustlify-glow"></div>
       <div class="hustlify-glow2"></div>
       <div>
-        <div class="hustlify-mark">H</div>
+        <div class="hustlify-mark">
+  <img src="hustlify-logo.jpg" alt="Hustlify">
+</div>
         <h3>Продвижение и оформление бренда — через <span class="accent2">Hustlify</span></h3>
         <p>Мой сервис, где мы соберем вам любой проект от идеи до монетизации - за неделю!</p>
         <div class="hustlify-tags">
